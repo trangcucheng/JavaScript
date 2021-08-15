@@ -1,0 +1,14 @@
+div.container{
+    position: relative;
+}
+p{
+    position: absolute;
+    width: 50%;
+    background-color: aliceblue;
+    border: 1px solid red;
+    padding: 5px;
+}
+div.btn{
+    position: absolute;
+    top: 300px;
+}

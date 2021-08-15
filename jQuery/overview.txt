@@ -8,3 +8,22 @@ Benefits when we use jQuery:
     - simplifies and has rich AJAX support
     (AJAX: Asynchronous JS and XML: kỹ thuật tạo các ứng dụng web giàu tính tương tác, nhanh hơn và mượt hơn nhờ XML, JS, HYML, CSS)
     
+Syntax:
+        $(document).ready(function(){
+                // jQ methods
+        });
+        or:
+        $(function(){
+
+        });
+
+Selectors: $("css selector")
+        ex: $("p"); $(".btn"); $("#main")
+                $("*") : all elements;
+                $(this): current element
+
+Events:
+        - mouse: click, dblclick, mouseenter, couseleave
+        - keyboard: keypress, keydown, keyup
+        - form: submit, change, focus, blur
+        - document/window: load, resize, scroll, unload
