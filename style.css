@@ -1,0 +1,25 @@
+/* 
+style for classList
+.box{
+    border: 3px solid pink;
+}
+
+.red-text{
+    color: red;
+}
+
+.no-border{
+    border-style: none;
+}
+
+ */
+
+ /* style for DOM_event */
+ ul{
+     display: none;
+ }
+
+ input:focus ~ ul{
+     display: block;
+ }
+

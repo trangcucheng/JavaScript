@@ -1,0 +1,10 @@
+jQuery: - a lightweight JS library
+        - simplifies programming with JS
+Features: fast, small, features-rich
+Benefits when we use jQuery:
+    - cross-browser
+    - more easy to use than raw JS
+    - extensible
+    - simplifies and has rich AJAX support
+    (AJAX: Asynchronous JS and XML: kỹ thuật tạo các ứng dụng web giàu tính tương tác, nhanh hơn và mượt hơn nhờ XML, JS, HYML, CSS)
+    

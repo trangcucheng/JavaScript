@@ -1,0 +1,19 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "name": "Chủ tịch nước: Không để quá tải bệnh viện, không để bệnh nặng tăng nhanh",
+      "description": "Cùng đi có Ủy viên Bộ Chính trị, Bí thư Thành ủy Hà Nội Đinh Tiến Dũng; các Bí thư Trung ương Đảng: Chủ tịch Ủy ban Trung ương MTTQ Việt Nam Đỗ Văn Chiến; Trưởng ban Dân vận Trung ương Bùi Thị Minh Hoài, lãnh đạo một số bộ, ngành và UBND thành phố Hà Nội."
+    },
+    {
+      "id": 2,
+      "name": "Lãnh đạo cấp cao đến các bộ trưởng tìm mọi cách lo đủ vắc xin cho dân",
+      "description": "Trong đó, Chính phủ nhấn mạnh đến việc đẩy mạnh hoạt động “ngoại giao vắc xin” bằng mọi biện pháp; thúc đẩy viện trợ, mua, nhập khẩu vắc xin để đáp ứng yêu cầu tiêm nhanh nhất, nhiều nhất có thể, sớm đạt miễn dịch cộng đồng."
+    },
+    {
+      "name": "Việt Nam tiếp nhận 13 tấn thiết bị y tế do Thụy Sĩ tặng",
+      "description": "Ngay sau chuyến thăm của Phó Tổng Thống Thụy Sĩ, sáng nay (13/8), 13 tấn trang thiết bị y tế do chính phủ Thụy Sỹ hỗ trợ khẩn cấp Việt Nam trong nỗ lực ngăn chặn dịch bệnh Covid-19 đã đến sân bay Tân Sơn Nhất.",
+      "id": 3
+    }
+  ]
+}

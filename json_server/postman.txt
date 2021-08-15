@@ -1,0 +1,9 @@
+FETCH
+- JSON server : API server (Fake) / Mock server
+- CRUD:
+    - create: tạo mới - POST
+    - read: lấy dữ liệu - GET
+    - update: cập nhật dữ liệu - PUT/PATCH
+    - delete: xóa dữ liệu - DELETE
+- REST API: 
+- Postman:

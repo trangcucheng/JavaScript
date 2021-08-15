@@ -1,0 +1,67 @@
+var postApi = 'http://localhost:3000/news';
+
+
+function start(){
+    getNews(renderNews);
+    handleCreateForm();
+};
+
+start();
+
+
+
+//function
+function getNews(callback){
+    fetch(postApi)
+        .then(function(response){
+            return response.json();
+        })
+        .then(callback)
+};
+
+function createNews(data, callback){
+    var options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        body: JSON.stringify(data)
+    };
+    fetch(postApi, options)
+        .then(function(response){
+            response.json();
+        })
+        .then(callback);
+};
+
+function renderNews(newsList){
+    var ulContainer = document.getElementById("news-container");
+    var htmls = newsList.map(function(newsItem){
+        return `
+        <li> 
+        <h1>${newsItem.title} </h1>
+        <p> ${newsItem.description}</p>
+        </li>
+        `;
+    });
+    ulContainer.innerHTML = htmls.join('');
+};
+
+// post news
+function handleCreateForm() {
+    var createBtn = document.querySelector('#create');
+    createBtn.onclick = function() {
+        var name = document.querySelector('input[name="name"]').value;
+        var description = document.querySelector('input[name="description"]').value;
+        };
+    var formObj = {
+        name: name,
+        description: description
+    }
+    createNews(formObj, function(){
+        getNews(renderNews);
+    });
+}
+
+

@@ -1,0 +1,91 @@
+ECMAScript 6 - ES6 (2015)
+Là một quy chuẩn cho JS
+Note: chưa được support hoàn toàn trên các trình duyệt
+1.Let, const 
+* var / let, const: scope, hosting
+- một biến khi được khai báo var có thể "hoạt động" trên toàn bộ chương trình;
+- một biến khi được khai báo let, const "hoạt động" bên trong một khối lệnh mà ở đó nó được khai báo
+- biến khai báo var được hosting (kéo lên đầu)
+- biến khai báo let, const không được hosting (kéo lên đầu)
+* const / var, let: assignment:
+- const không được sử dụng toán tử gán tới lần thứ hai
+Note:
+const a = {
+    name: "JS"
+}
+a.name = 'PHP': // được phép
+a= 100; // không được phép
+
+=> khi dùng biến mà không gán lại => dùng const
+2.Template literals
+3.Multi-line  String
+4.Arrow function:
+Ex: 
+const sum =function(a,b) {
+    return a+b;
+}
+
+=> Arrow function:
+ex1: const sum = (a,b) => a+b;
+ex2: const obj = (a,b) => ({a: a, b:b})
+Note: sau dấu => nếu gặp {} thì sẽ không return ngay, nếu không gặp dấu {} thì sẽ lập tức return cái ngay sau =>
+
+5.Classes
+Trước khi có ES6:
+constructor function:
+function course(name, price){
+    this.name= name;
+    this.price =  price;
+    this.getName = function(){
+        return this.name;
+    }
+}
+Trong ES6: dùng Class
+class course {
+    constructor(name, price){
+        this.name= name;
+        this.price =  price;
+    }
+    getName() {
+        return this.name;
+    }
+}
+
+6.Default parameter values: giá trị mặc định cho các tham số thường được sử dụng khi tham số đó không bắt buộc
+khi khai báo một hàm, các tham số được gán giá trị ngay bên trong dấu () của hàm => giá trị mặc định
+
+Ex: function print(msg="Giá trị mặc định");
+7.Destructuring: Phân rã
+var array = ['JavaScript', 'PHP', ' Ruby'];
+
+/*
+var a = array[0];
+var b = array[1];
+var c = array[2];
+*/
+
+var [a,b,c] = array;
+Note: Rest parameters:
+khi muốn lấy các phần tử
+9.Spread
+10.Enhanced object literals:
+Cung cấp cách viết ngắn gọn hơn cho: 
+- định nghĩa key: value
+- định nghĩa method cho obj
+- định nghĩa key cho obj dưới dạng biến
+11.Tagged template literal
+12.Modules: import/ export
+13. Optional chaining(cú pháp: ?.)
+kiểm tra xem 1 key, 1 giá trị có tồn tại hay không
+Ex: 
+const obj = {
+    name: 'Alice',
+    cat1: {
+        name: 'John1',
+        cat2: {
+            name: 'John2'
+        }
+    }
+}
+
+if (obj?.cat1?.cat2?.name) {...}
